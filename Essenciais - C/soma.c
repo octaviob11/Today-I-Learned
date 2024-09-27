@@ -7,7 +7,9 @@ Esse código realzia a soma de dois números inteiros
 
 
 int main(){
+
 	//Declaração e inicialização das variáveis num1 e num2.
+
 	int num1 = 0;
 	int num2 = 0;
 
