@@ -32,7 +32,9 @@ int main(int argc, char ** argv){
 	//Chamada de sistema para ler e depois escrever na tela
 	while((numRead = read( FD, buffer,BUFFER_SIZE))>0){
 		// STDOUT_FILENO = 0 no caso é a tela da execução!
+			//Write é mais eficiente do que o printf()
 			write(STDOUT_FILENO,buffer,numRead);
+
 	}
 
 	if(close(FD) == -1){
