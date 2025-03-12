@@ -22,7 +22,8 @@ int main () {
 	char caractere = 0;
 
 	for (int i = 0; i<256; i++){
-		printf("Caractere %c = %d\n", caractere+i, caractere+i);
+		printf("Caractere %c = %d\n", caractere, caractere);
+		caractere++;
 	}
 
 	return 0;
