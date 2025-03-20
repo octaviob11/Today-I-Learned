@@ -3,17 +3,11 @@
 #include<stdio.h>
 #include<string.h>
 
-int main()
-   {
-
-// Vamos escrever uma string em uma variável do tipo double
-
+int main(){
+	// Vamos escrever uma string em uma variável do tipo: long unsigned int
    	long unsigned int a;
-
    	char * s;
-	   s = (char * )&a; 
-   
-
+	s = (char * )&a; 
    	/*Para funcionar na minha maquina que possui o seguinte compilador:
    	gcc -v
    	Apple clang version 14.0.0 (clang-1400.0.29.202)
@@ -28,13 +22,8 @@ int main()
    	// para funcionar no
    	   	a =0x003532303220694f;
   */
-  		
 
-   
    	printf("Tamanho da variável do tipo unsigned long int = %lu\n", sizeof(a));
-
-
-	
     printf("%s\n",s);
     return 0;
 }
